@@ -27,7 +27,7 @@ def get_env(env_key, filepath):
 def get_random_quote():
     """ Returns random quote from quotes file"""
 
-    with open('./utils/quotes.json', 'r') as quotes:
+    with open('../utils/quotes.json', 'r') as quotes:
         bobbyb_quotes = json.load(quotes)
     
     return random.choice(bobbyb_quotes)
@@ -35,7 +35,7 @@ def get_random_quote():
 def is_keyword_mentioned(text):
     """ Checks if the trigger words to call the bot are present in the string """
      
-    with open('./utils/triggers.json', 'r') as triggers:
+    with open('../utils/triggers.json', 'r') as triggers:
         keywords = json.load(triggers)
 
     for keyword in keywords:
