@@ -43,8 +43,8 @@ def is_keyword_mentioned(text):
         # Do a case insensitive search
         if re.search(keyword, text, re.IGNORECASE):
             return True
-        else:
-            return False
+    
+    return False
 
 def get_username(author):
     """ Handles author names when comment was deleted before the bot could reply """
